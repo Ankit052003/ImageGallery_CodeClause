@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery in HTML, CSS and JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="filter_buttons">
+        <button class="active" data-name="all">Show All</button>
+        <button data-name="birds">Birds</button>
+        <button data-name="clothes">Clothes</button>
+        <button data-name="flowers">Flowers</button>
+        <button data-name="pets">Pets</button>
+        <button data-name="shoes">Shoes</button>
+    </div>
+
+    <div class="filterable_cards">
+        <div class="card" data-name="birds">
+            <img src="Images/birds/bird-1.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">birds</h6>
+                <p class="card_text">Bird-1</p>
+            </div>
+        </div>
+        <div class="card" data-name="birds">
+            <img src="Images/birds/bird-2.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">birds</h6>
+                <p class="card_text">Bird-2</p>
+            </div>
+        </div>
+        <div class="card" data-name="birds">
+            <img src="Images/birds/bird-3.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">birds</h6>
+                <p class="card_text">Bird-3</p>
+            </div>
+        </div>
+        <div class="card" data-name="birds">
+            <img src="Images/birds/bird-4.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">birds</h6>
+                <p class="card_text">Bird-4</p>
+            </div>
+        </div>
+        <div class="card" data-name="birds">
+            <img src="Images/birds/bird-5.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">birds</h6>
+                <p class="card_text">Bird-5</p>
+            </div>
+        </div>
+        <div class="card" data-name="clothes">
+            <img src="Images/clothes/cloth-1.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">cloth</h6>
+                <p class="card_text">cloth-1</p>
+            </div>
+        </div>
+        <div class="card" data-name="clothes">
+            <img src="Images/clothes/cloth-2.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">cloth</h6>
+                <p class="card_text">cloth-2</p>
+            </div>
+        </div>
+        <div class="card" data-name="clothes">
+            <img src="Images/clothes/cloth-3.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">cloth</h6>
+                <p class="card_text">cloth-3</p>
+            </div>
+        </div>
+        <div class="card" data-name="clothes">
+            <img src="Images/clothes/cloth-4.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">cloth</h6>
+                <p class="card_text">cloth-4</p>
+            </div>
+        </div>
+        <div class="card" data-name="clothes">
+            <img src="Images/clothes/download.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">cloth</h6>
+                <p class="card_text">cloth-5</p>
+            </div>
+        </div>
+        <div class="card" data-name="flowers">
+            <img src="Images/flowers/flower-1.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">flower</h6>
+                <p class="card_text">flower-1</p>
+            </div>
+        </div>
+        <div class="card" data-name="flowers">
+            <img src="Images/flowers/flower-2.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">flower</h6>
+                <p class="card_text">flower-2</p>
+            </div>
+        </div>
+        <div class="card" data-name="flowers">
+            <img src="Images/flowers/flower-3.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">flower</h6>
+                <p class="card_text">flower-3</p>
+            </div>
+        </div>
+        <div class="card" data-name="flowers">
+            <img src="Images/flowers/flower-4.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">flower</h6>
+                <p class="card_text">flower-4</p>
+            </div>
+        </div>
+        <div class="card" data-name="flowers">
+            <img src="Images/flowers/flower-5.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">flower</h6>
+                <p class="card_text">flower-5</p>
+            </div>
+        </div>
+        <div class="card" data-name="pets">
+            <img src="Images/pets/pet-1.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">pet</h6>
+                <p class="card_text">pet-1</p>
+            </div>
+        </div>
+        <div class="card" data-name="pets">
+            <img src="Images/pets/pet-2.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">pet</h6>
+                <p class="card_text">pet-2</p>
+            </div>
+        </div>
+        <div class="card" data-name="pets">
+            <img src="Images/pets/pet-3.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">pet</h6>
+                <p class="card_text">pet-3</p>
+            </div>
+        </div>
+        <div class="card" data-name="pets">
+            <img src="Images/pets/pet-4.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">pet</h6>
+                <p class="card_text">pet-4</p>
+            </div>
+        </div>
+        <div class="card" data-name="pets">
+            <img src="Images/pets/pet-5.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">pet</h6>
+                <p class="card_text">pet-5</p>
+            </div>
+        </div>
+        <div class="card" data-name="shoes">
+            <img src="Images/shoes/shoe-1.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">shoes</h6>
+                <p class="card_text">shoe-1</p>
+            </div>
+        </div>
+        <div class="card" data-name="shoes">
+            <img src="Images/shoes/shoe-2.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">shoes</h6>
+                <p class="card_text">shoe-2</p>
+            </div>
+        </div>
+        <div class="card" data-name="shoes">
+            <img src="Images/shoes/shoe-3.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">shoes</h6>
+                <p class="card_text">shoe-3</p>
+            </div>
+        </div>
+        <div class="card" data-name="shoes">
+            <img src="Images/shoes/shoe-4.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">shoes</h6>
+                <p class="card_text">shoe-4</p>
+            </div>
+        </div>
+        <div class="card" data-name="shoes">
+            <img src="Images/shoes/shoe-5.jpeg" alt="">
+            <div class="card_body">
+                <h6 class="card_title">shoes</h6>
+                <p class="card_text">shoe-5</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
